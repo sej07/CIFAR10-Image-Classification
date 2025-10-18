@@ -39,6 +39,7 @@ A Convolutional Neural Network built from scratch to classify CIFAR-10 images in
   - Std: (0.2470, 0.2435, 0.2616)
 
 ## Repository Structure
+'''
 cifar10-cnn/
 ├── data/
 ├── models/
@@ -59,6 +60,7 @@ cifar10-cnn/
 ├── test_model.py 
 ├── requirements.txt
 └── README.md
+'''
 
 ## Training Setup
 
@@ -120,19 +122,19 @@ cifar10-cnn/
 
 The evaluation script generates:
 1. **Training Curves:** Loss and accuracy over 50 epochs
-<img width="1200" height="400" alt="training_curves" src="https://github.com/user-attachments/assets/5fd924c3-55d0-4b8b-97bf-e847ce016dd4" />
+<img width="500" height="200" alt="training_curves" src="https://github.com/user-attachments/assets/5fd924c3-55d0-4b8b-97bf-e847ce016dd4" />
 
 
 2. **Confusion Matrix:** 10×10 heatmap showing class confusions
-<img width="1000" height="800" alt="confusion_matrix" src="https://github.com/user-attachments/assets/b8da9c78-5f6b-4a75-a7b0-337d2a993a69" />
+<img width="500" height="200" alt="confusion_matrix" src="https://github.com/user-attachments/assets/b8da9c78-5f6b-4a75-a7b0-337d2a993a69" />
 
 
 3. **Per-Class Accuracy:** Bar chart for each of 10 classes
-<img width="1200" height="600" alt="per_class_accuracy" src="https://github.com/user-attachments/assets/4c261ed7-16cc-4588-80c9-43a7844d3ded" />
+<img width="500" height="200" alt="per_class_accuracy" src="https://github.com/user-attachments/assets/4c261ed7-16cc-4588-80c9-43a7844d3ded" />
 
 
 4. **Sample Predictions:** Grid of 20 images with true/predicted labels (green=correct, red=incorrect)
-<img width="1500" height="1200" alt="sample_predictions" src="https://github.com/user-attachments/assets/d8ac7a97-cd57-4c6d-82d6-834e1c6a9bcc" />
+<img width="500" height="200" alt="sample_predictions" src="https://github.com/user-attachments/assets/d8ac7a97-cd57-4c6d-82d6-834e1c6a9bcc" />
 
 
 ## Key Learnings
