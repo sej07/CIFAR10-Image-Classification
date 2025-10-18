@@ -1,1 +1,13 @@
 Implementation details.txt
+data/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.Python
+*.so
+.DS_Store
+.vscode/
+.idea/
+*.log
+training.log
