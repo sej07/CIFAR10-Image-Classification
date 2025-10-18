@@ -120,12 +120,19 @@ cifar10-cnn/
 
 The evaluation script generates:
 1. **Training Curves:** Loss and accuracy over 50 epochs
+<img width="1200" height="400" alt="training_curves" src="https://github.com/user-attachments/assets/5fd924c3-55d0-4b8b-97bf-e847ce016dd4" />
+
 
 2. **Confusion Matrix:** 10×10 heatmap showing class confusions
+<img width="1000" height="800" alt="confusion_matrix" src="https://github.com/user-attachments/assets/b8da9c78-5f6b-4a75-a7b0-337d2a993a69" />
+
 
 3. **Per-Class Accuracy:** Bar chart for each of 10 classes
+<img width="1200" height="600" alt="per_class_accuracy" src="https://github.com/user-attachments/assets/4c261ed7-16cc-4588-80c9-43a7844d3ded" />
+
 
 4. **Sample Predictions:** Grid of 20 images with true/predicted labels (green=correct, red=incorrect)
+<img width="1500" height="1200" alt="sample_predictions" src="https://github.com/user-attachments/assets/d8ac7a97-cd57-4c6d-82d6-834e1c6a9bcc" />
 
 
 ## Key Learnings
@@ -169,7 +176,3 @@ The evaluation script generates:
 - **Class imbalance in difficulty:** Animals (cat, dog, bird) are harder than vehicles (ship, truck)
 - **Training on CPU:** Takes 3-4× longer than GPU but produces identical results
 - **First independent ML project:** Built entirely from scratch without following tutorials
-
-## Dataset
-
-- CIFAR-10 Dataset: [Learning Multiple Layers of Features from Tiny Images](https://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf) (Alex Krizhevsky, 2009)
