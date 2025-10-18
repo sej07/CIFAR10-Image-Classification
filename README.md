@@ -39,7 +39,7 @@ A Convolutional Neural Network built from scratch to classify CIFAR-10 images in
   - Std: (0.2470, 0.2435, 0.2616)
 
 ## Repository Structure
-'''
+```
 cifar10-cnn/
 ├── data/
 ├── models/
@@ -60,7 +60,7 @@ cifar10-cnn/
 ├── test_model.py 
 ├── requirements.txt
 └── README.md
-'''
+```
 
 ## Training Setup
 
