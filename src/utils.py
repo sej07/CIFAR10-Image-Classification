@@ -40,7 +40,13 @@ def load_checkpoint(model, optimizer, filepath):
 
 #plot training history
 def plot_training_history(train_losses, val_losses, train_accs, val_accs, save_path):
-    epochs = range(1, len(train_losses) -1)
+    print(f"DEBUG: train_losses length: {len(train_losses)}")
+    print(f"DEBUG: val_losses length: {len(val_losses)}")
+    print(f"DEBUG: train_accs length: {len(train_accs)}")
+    print(f"DEBUG: val_accs length: {len(val_accs)}")
+    
+    epochs = range(1, len(train_losses) + 1)
+    print(f"DEBUG: epochs: {list(epochs)}")
     fig , (ax1, ax2) = plt.subplots(1,2,figsize = (12,4))
 
     #plot losses

@@ -2,8 +2,7 @@ import torch
 import os
 
 #device
-DEVICE = torch.device('mps' if torch.backends.mps.is_available() else 'cpu')
-
+DEVICE = torch.device('cpu')  
 #paths
 DATA_DIR = './data'
 MODEL_DIR = './models'
@@ -21,7 +20,7 @@ DROPOUT_RATE = 0.5
 
 #training hyperparameters
 LEARNING_RATE = 0.001
-NUM_EPOCHS = 50
+NUM_EPOCHS = 5
 WEIGHT_DECAY = 1e-4
 
 #normalization 

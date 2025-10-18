@@ -25,7 +25,7 @@ def train_one_epoch(model, train_loader, criterion, optimizer, device):
         _, predicted = torch.max(outputs, 1)
         total += labels.size(0)
         correct += (predicted == labels).sum().item()
-        pbar.set_postifx({'loss': loss.item()})
+        pbar.set_postfix({'loss': loss.item()})
     avg_loss = running_loss / len(train_loader)
     accuracy = 100 * correct / total
     return avg_loss, accuracy
@@ -87,15 +87,14 @@ def main():
         if val_acc > best_val_acc:
             best_val_acc = val_acc
             save_checkpoint(
-                model, optimizer, val_loss, val_acc, 
-                os.path.join(config.MODEL_DIR, 'best_model.pth')
+                model, optimizer,epoch, val_loss, val_acc, os.path.join(config.MODEL_DIR, 'best_model.pth')
                 )
             print(f'New best model saved (Val Acc: {val_acc:.2f}%)')
     print("\n Training complete")
-    print('Best Validation accuracy: {best_val_acc:.2f}%')
+    print(f'Best Validation accuracy: {best_val_acc:.2f}%')
     plot_path = os.path.join(config.RESULTS_DIR, 'training_curves.png')
     plot_training_history(train_losses, val_losses, train_accs, val_accs, plot_path)
-    print("\n Training curves saved to {plot_path}")
+    print(f"\n Training curves saved to {plot_path}")
     print(f"Best model saved to {os.path.join(config.MODEL_DIR, 'best_model.pth')}")
 
 if __name__ == '__main__':
