@@ -12,7 +12,6 @@ import torch
 import torch.nn as nn
 from src import config
 
-
 class CNN(nn.Module): 
     def __init__(self):
         super(CNN, self).__init__()
@@ -46,7 +45,7 @@ class CNN(nn.Module):
             nn.Dropout(config.DROPOUT_RATE),
             nn.Linear(512, config.NUM_CLASSES)
         )
-    
+        
     def forward(self, x):
         x = self.features(x)
         x = self.classifier(x)
