@@ -45,7 +45,7 @@ class CNN(nn.Module):
             nn.Dropout(config.DROPOUT_RATE),
             nn.Linear(512, config.NUM_CLASSES)
         )
-        
+
     def forward(self, x):
         x = self.features(x)
         x = self.classifier(x)

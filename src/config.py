@@ -2,7 +2,7 @@ import torch
 import os
 
 #device
-DEVICE = torch.device('cpu')  
+DEVICE = torch.device('cpu') 
 #paths
 DATA_DIR = './data'
 MODEL_DIR = './models'
@@ -20,7 +20,7 @@ DROPOUT_RATE = 0.5
 
 #training hyperparameters
 LEARNING_RATE = 0.001
-NUM_EPOCHS = 5
+NUM_EPOCHS = 50
 WEIGHT_DECAY = 1e-4
 
 #normalization 
