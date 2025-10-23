@@ -177,4 +177,3 @@ The evaluation script generates:
 - **Data augmentation complexity:** Random crops and flips make training harder but improve generalization
 - **Class imbalance in difficulty:** Animals (cat, dog, bird) are harder than vehicles (ship, truck)
 - **Training on CPU:** Takes 3-4× longer than GPU but produces identical results
-- **First independent ML project:** Built entirely from scratch without following tutorials
